@@ -1,0 +1,19 @@
+
+
+client 0,n : le client s'enregistre ou non, il peut faire un ou plusieurs emprunts
+
+registre 1,1 vers clients: l'emprunt est fait par UNE personne (pour un livre) unique
+
+registre 1,1 vers livres : obligatoirement UN registre pour emprunter UN livre unique 
+
+livres 0,n vers registre : on peut ou non emprunter un livre, un registre = un livre emprunté
+
+livres 1,1 vers genre : un livre a UN genre
+
+genre 1,n vers livres : un genre par livre, plusieurs livres
+
+client 1,1 vers genre : un genre préféré seulement
+
+genre 0,n vers clients : il peut ne pas y avoir de clients aimants ce genre
+			comme il peut y en avoir plusieurs
+
